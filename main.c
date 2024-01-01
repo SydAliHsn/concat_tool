@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     char *destinationFileName = argv[argc - 1];
 
     // If using the help switch.
-    if (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0)
+    if (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0 || argc < 3)
     {
         printHelp();
         return 0;
